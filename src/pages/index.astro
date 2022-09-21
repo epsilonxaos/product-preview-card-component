@@ -1,25 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import productD from '../img/image-product-desktop.jpg';
+import productM from '../img/image-product-mobile.jpg';
 import iconCart from '../img/icon-cart.svg';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="bg-yellow-50 grid place-content-center h-screen">
-		<div class="grid grid-cols-2 bg-white overflow-hidden rounded-lg shadow-sm">
-			<div class="w-56">
-				<img src={productD} alt="Gabrielle Essence Eau De Parfum">
+	<main class="bg-[#f2ebe3] grid place-content-center h-screen p-4">
+		<div class="grid grid-cols-1 md:grid-cols-2 bg-white overflow-hidden rounded-lg shadow-sm max-w-[340px] md:max-w-[38rem] w-full">
+			<div class="h-[240px] md:h-[29rem]">
+				<img src={productM} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full md:hidden">
+				<img src={productD} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full hidden md:block">
 			</div>
-			<div class="px-6 py-6 w-56 font-monserrat">
-				<h5 class="tracking-widest text-xs text-gray-400">PERFUME</h5>
-				<h2 class="font-fraunces">Gabrielle Essence Eau De Parfum</h2>
-				<p class="text-xs text-gray-500 mb-4 leading-5">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
+			<div class="p-8 font-monserrat">
+				<h5 class="tracking-[0.4rem] mb-4 text-xs text-[#6c7289]">PERFUME</h5>
+				<h2 class="font-fraunces text-[32px] leading-[1.05] mb-5">Gabrielle Essence Eau De Parfum</h2>
+				<p class="text-[14px] text-[#6c7289] leading-6 mb-6">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
 
-				<div class="flex">
-					<h3 class="font-fraunces text-cyangray">$149.99</h3>
-					<span>$169.00</span>
+				<div class="flex items-center mb-4">
+					<h3 class="font-fraunces text-[#3c8067] text-[32px] font-bold">$149.99</h3>
+					<span class="text-[#6c7289] line-through text-sm ml-4 block">$169.00</span>
 				</div>
-				<button class="w-full bg-green-700 text-sm flex items-center justify-center bg-cyangray text-white text-center p-2 rounded-md font-medium"><img src={iconCart} alt="Add to cart" class="w-3 mr-3"> Add to Cart</button>
+				<button class="transition shadow-sm w-full text-[14px] flex items-center justify-center bg-[#3c8067] text-white text-center px-2 py-4 rounded-lg font-bold hover:bg-[#285645]"><img src={iconCart} alt="Add to cart" class="w-3 mr-3"> Add to Cart</button>
 			</div>
 		</div>
 	</main>

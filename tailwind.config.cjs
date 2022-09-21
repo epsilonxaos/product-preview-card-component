@@ -7,9 +7,13 @@ module.exports = {
 			'monserrat': ['Montserrat', 'serif'],
 			'fraunces': ['Fraunces', 'sans-serif']
 		},
-		colors: {
-			'cyangray': '#3c8067'
-		}
+		// colors: {
+		// 	'cyangray': '#3c8067'
+		// },
+		// spacing : {
+		// 	'600': "38rem",
+		// 	'400': '29rem'
+		// },
 	},
 	plugins: [],
 }
