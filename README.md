@@ -2,7 +2,7 @@
 
 This exercise is part of challegen of Frontend Mentor.
 
-Visit exercise: [Demo]()
+Visit exercise: [Demo](https://dynamic-squirrel-9801f4.netlify.app/)
 
 
 ## 🚀 Project Structure
