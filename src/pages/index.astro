@@ -9,8 +9,10 @@ import iconCart from '../img/icon-cart.svg';
 	<main class="bg-[#f2ebe3] grid place-content-center h-screen p-4">
 		<div class="grid grid-cols-1 md:grid-cols-2 bg-white overflow-hidden rounded-lg shadow-sm max-w-[340px] md:max-w-[38rem] w-full">
 			<div class="h-[240px] md:h-[29rem]">
-				<img src={productM} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full md:hidden">
-				<img src={productD} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full hidden md:block">
+				<picture class="h-full">
+					<img src={productM} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full md:hidden">
+					<img src={productD} alt="Gabrielle Essence Eau De Parfum" class="object-cover h-full hidden md:block">
+				</picture>
 			</div>
 			<div class="p-8 font-monserrat">
 				<h3 class="tracking-[0.4rem] mb-4 text-xs text-[#6c7289]">PERFUME</h3>
